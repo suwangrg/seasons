@@ -1,0 +1,63 @@
+/* Reset and base styles */
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  font-family: 'Segoe UI', sans-serif;
+}
+
+body {
+  background: url('bg.jpg') no-repeat center center fixed;
+  background-size: cover;
+  height: 100vh;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+/* Overlay for dark effect and centering content */
+.overlay {
+  background-color: rgba(0, 0, 0, 0.6);
+  color: #ffffff;
+  text-align: center;
+  padding: 2rem;
+  border-radius: 15px;
+  width: 90%;
+  max-width: 500px;
+}
+
+/* Logo styling */
+.logo {
+  width: 120px;
+  height: auto;
+  margin-bottom: 1.5rem;
+}
+
+/* Headline styling */
+h1 {
+  font-size: 2.5rem;
+  margin-bottom: 1rem;
+}
+
+/* Paragraph styling */
+p {
+  font-size: 1.2rem;
+  margin-bottom: 0.5rem;
+}
+
+/* Phone number styling */
+.phone {
+  font-weight: bold;
+  font-size: 1.1rem;
+  margin-top: 1rem;
+}
+
+/* Responsive typography */
+@media (max-width: 600px) {
+  h1 {
+    font-size: 2rem;
+  }
+  p {
+    font-size: 1rem;
+  }
+}
