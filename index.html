@@ -1,18 +1,139 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
-  <meta charset="UTF-8" />
-  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-  <title>Coming Soon - Seasons International</title>
-  <link rel="stylesheet" href="style.css" />
-  <link rel="icon" href="favicon.ico" type="image/x-icon" />
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Seasons International Education Consultancy</title>
+  <link rel="stylesheet" href="style.css">
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css">
+  <link rel="icon" href="favicon.ico" type="image/x-icon">
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Noto+Serif:wght@400;700&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="globe.css">
 </head>
 <body>
-  <div class="overlay">
-    <img src="logo.png" alt="Seasons International Logo" class="logo" />
-    <h1>Coming Soon</h1>
-    <p>Seasons International Education Consultancy</p>
-    <p class="phone">📞 +977 9856088959</p>
+  <div class="overlay"></div>
+  <main-header></main-header>
+
+  <div id="globe-container">
+    <canvas id="stars-canvas"></canvas>
+    <div id="globe"></div>
+    <div class="hero-content">
+      <h1>
+        <span class="h1-sub">Your Path to</span>
+        <br>
+        Global Education
+      </h1>
+      <p>Guiding from application to acceptance.</p>
+      <a href="contact.html" class="cta-button">Explore Today</a>
+    </div>
   </div>
+
+  <section class="services">
+    <div class="container">
+      <h2>Our Services</h2>
+      <div class="service-grid">
+        <div class="service-card">
+          <i class="fas fa-university"></i>
+          <h3>University Applications</h3>
+          <p>Expert guidance on choosing the right university and preparing a winning application.</p>
+        </div>
+        <div class="service-card">
+          <i class="fas fa-passport"></i>
+          <h3>Visa Assistance</h3>
+          <p>Comprehensive support to ensure a smooth and successful visa application process.</p>
+        </div>
+        <div class="service-card">
+          <i class="fas fa-graduation-cap"></i>
+          <h3>Career Counseling</h3>
+          <p>Personalized counseling to help you align your academic choices with your career aspirations.</p>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <section class="timeline">
+    <div class="container">
+      <h2>Student Journey</h2>
+      <div class="timeline-item">
+      <div class="timeline-content">
+          <h3>Step 1 : Consultation, Career Counselling & Country Selection</h3>
+          <p>Meet with our expert counselors to discuss your academic background, goals and preferred study destinations. We provide personalized guidance on course and country selection based on your interests, budget, academic history, and long-term goals.</p>
+        </div>
+      </div>
+      <div class="timeline-item">
+        <div class="timeline-content">
+          <h3>Step 2 : Test Preparation</h3>
+          <p>Enroll in coaching classes for required language or aptitude tests such as IELTS, TOEFL, PTE, SAT, GRE, or GMAT, depending on the chosen country and course.</p>
+        </div>
+      </div>
+      <div class="timeline-item">
+        <div class="timeline-content">
+          <h3>Step 3 : University Shortlisting & Application</h3>
+          <p>Get assistance in shortlisting the right universities and programs. We help in completing and submitting strong, well-organized applications.</p>
+        </div>
+      </div>
+      <div class="timeline-item">
+        <div class="timeline-content">
+          <h3>Step 4 : Documentation Support</h3>
+          <p>Prepare all required documents such as academic transcripts, recommendation letters, Statement of Purpose (SOP), and financial papers with our support.</p>
+        </div>
+      </div>
+      <div class="timeline-item">
+        <div class="timeline-content">
+          <h3>Step 5 : Offer Letter & Admission</h3>
+          <p>Receive and review offer letters from universities. We help you understand the terms and make informed decisions about acceptance.</p>
+        </div>
+      </div>
+      <div class="timeline-item">
+        <div class="timeline-content">
+          <h3>Step 6 : Visa Application Process</h3>
+          <p>Receive end-to-end guidance in preparing your visa documents, booking visa appointments, and attending visa interviews confidently.</p>
+        </div>
+      </div>
+      <div class="timeline-item">
+        <div class="timeline-content">
+          <h3>Congratulations!</h3>
+          <p>Upon successful completion of the previous steps, you now have a bright future ahead! We also help you with flight booking, practical guidance when going abroad as well as providing contacts who can help you for education, work, and visa in your destination country!</p>
+        </div>
+      </div>
+
+    </div>
+  </section>
+
+  <section class="testimonials">
+    <div class="container">
+      <h2>Our Success Stories</h2>
+      <div class="testimonial-carousel">
+        <div class="testimonial active">
+          
+          <p>"Seasons International made my dream of studying abroad a reality. Their support was invaluable."</p>
+          <h4>- Bishnu Acharya</h4>
+        </div>
+        <div class="testimonial">
+          
+          <p>"The team is incredibly professional and knowledgeable. I couldn't have done it without them."</p>
+          <h4>- Sabina Thapa</h4>
+        </div>
+        <div class="testimonial">
+          
+          <p>"From start to finish, the process was seamless. Highly recommended!"</p>
+          <h4>- Bijay Gurung</h4>
+        </div>
+      </div>
+      <div class="carousel-buttons">
+        <button class="carousel-button prev-button"><i class="fas fa-chevron-left"></i></button>
+        <button class="carousel-button next-button"><i class="fas fa-chevron-right"></i></button>
+      </div>
+    </div>
+  </section>
+
+  <main-footer></main-footer>
+
+  <script src="components.js"></script>
+  <script src="script.js"></script>
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/three.js/r128/three.min.js"></script>
+  <script src="globe.js"></script>
 </body>
 </html>
