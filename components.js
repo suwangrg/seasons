@@ -4,8 +4,8 @@ class Header extends HTMLElement {
     this.innerHTML = `
       <nav class="navbar">
         <div class="navbar-container">
-          <a href="index.html" class="navbar-logo">
-            <img src="logo.png" alt="Seasons International Education Consultancy">
+          <a href="/" class="navbar-logo">
+            <img src="/logo.png" alt="Seasons International Education Consultancy">
             <span class="logo-text">Seasons International Education Consultancy</span>
           </a>
           <div class="menu-icon">
@@ -13,13 +13,13 @@ class Header extends HTMLElement {
           </div>
           <ul class="nav-menu">
             <li class="nav-item">
-              <a href="index.html" class="nav-links">Home</a>
+              <a href="/" class="nav-links">Home</a>
             </li>
             <li class="nav-item">
-              <a href="about.html" class="nav-links">About</a>
+              <a href="/about/" class="nav-links">About</a>
             </li>
             <li class="nav-item">
-              <a href="contact.html" class="nav-links">Contact</a>
+              <a href="/contact/" class="nav-links">Contact</a>
             </li>
           </ul>
         </div>
@@ -34,16 +34,16 @@ class Footer extends HTMLElement {
       <footer class="footer">
         <div class="footer-container">
           <div class="footer-logo">
-            <a href="index.html">
-              <img src="logo.png" alt="Seasons International Education Consultancy">
+            <a href="/">
+              <img src="/logo.png" alt="Seasons International Education Consultancy">
             </a>
           </div>
           <div class="footer-links">
             <h4>Quick Links</h4>
             <ul>
-              <li><a href="index.html">Home</a></li>
-              <li><a href="about.html">About</a></li>
-              <li><a href="contact.html">Contact</a></li>
+              <li><a href="/">Home</a></li>
+              <li><a href="/about/">About</a></li>
+              <li><a href="/contact/">Contact</a></li>
             </ul>
           </div>
           <div class="footer-contact">
