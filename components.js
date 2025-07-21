@@ -54,10 +54,7 @@ class Footer extends HTMLElement {
           </div>
           <div class="footer-social">
             <h4>Follow Us</h4>
-            <a href="#"><i class="fab fa-facebook-f"></i></a>
-            <a href="#"><i class="fab fa-twitter"></i></a>
-            <a href="#"><i class="fab fa-instagram"></i></a>
-            <a href="#"><i class="fab fa-linkedin-in"></i></a>
+            <a href="https://www.facebook.com/profile.php?id=61578247843487"><i class="fab fa-facebook-f"></i></a>
           </div>
         </div>
         <div class="footer-bottom">
